@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments :: head">
+
+</head>
+<body>
+	<header th:insert="fragments :: navbar">
+		
+	</header>
+	
+	<main class="container">
+		<div class="row">
+			<h1> Best of the year [[ ${name} ]]</h1>	
+		</div>
+	</main>
+    
+	
+	
+	<footer th:replace="fragments :: footer"></footer>
+	<th:block th:replace="fragments :: scripts"></th:block>
+</body>
+</html>
